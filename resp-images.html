@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Responsive Design</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images</title>
   </head>
-  <body>
-    <div class="section content">
-      <div class="illustration">
-        <img src="images/illustration-big.png" style="max-width: 500px;" />
-      </div>
-    </div>
+
+  <body class="container">
+    <header>
+      <picture class="tiger-header">
+        <source media="(min-width: 320px)" srcset="./images/hero.jpg" />
+        <source media="(min-width: 640px" srcset="./image/hero.jpb" />
+        <img src="./images/hero.jpg" alt="Tiger" style="width: auto;" />
+      </picture>
+    </header>
+    <header>
+      <picture class="cat-profile">
+        <source media="(min-width: 320px)" srcset="./images/profile.png" />
+        <source media="(min-width: 640 px)" srcset="./images/profile.png" />
+        <img
+          src="./images/profile.png"
+          alt="cat-profile-pic"
+          style="width: auto;"
+        />
+      </picture>
+      <h1 class="daniel-name">Daniel McFish</h1>
+    </header>
+
+    <main class="cat-images">
+      <img src="./images/cat-1.jpg" alt="cat-1" />
+      <img src="./images/cat-2.jpg" alt="cat-2" />
+      <img src="./images/cat-3.jpg" alt="cat-3" />
+    </main>
   </body>
 </html>

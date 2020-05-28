@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mobile styles*/
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: white;
+  }
+}
+
+/*Desktop styles*/
+@media only screen and (max-width: 1280px) {
+  body {
+    background-color: white;
+  }
+}
+
+/*Tablet styles*/
+@media only screen and (max-width: 640px) {
+  body {
+    background-color: white;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.tiger-header {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  box-sizing: border-box;
+}
+.cat-images {
+  width: 100%;
+}

@@ -3,34 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Responsive Images</title>
   </head>
 
-  <body class="container">
-    <header>
-      <picture class="tiger-header">
-        <source media="(min-width: 320px)" srcset="./images/hero.jpg" />
-        <source media="(min-width: 640px" srcset="./image/hero.jpb" />
-        <img src="./images/hero.jpg" alt="Tiger" style="width: auto;" />
-      </picture>
-    </header>
-    <header>
-      <picture class="cat-profile">
-        <source media="(min-width: 320px)" srcset="./images/profile.png" />
-        <source media="(min-width: 640 px)" srcset="./images/profile.png" />
-        <img
-          src="./images/profile.png"
-          alt="cat-profile-pic"
-          style="width: auto;"
-        />
-      </picture>
-      <h1 class="daniel-name">Daniel McFish</h1>
-    </header>
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <div>
+          <picture class="tiger-hero">
+            <source
+              media="(min-width: 320px)"
+              srcset="./images/hero-small.jpg"
+            />
+            <source media="(min-width: 450px" srcset="./image/hero-big.jpb" />
+            <img
+              src="./images/hero-small.jpg"
+              alt="Tiger"
+              style="width: auto;"
+            />
+          </picture>
+        </div>
 
-    <main class="cat-images">
-      <img src="./images/cat-1.jpg" alt="cat-1" />
-      <img src="./images/cat-2.jpg" alt="cat-2" />
-      <img src="./images/cat-3.jpg" alt="cat-3" />
-    </main>
+        <picture class="picture-profile-cat">
+          <div class="cat-profile">
+            <source media="(min-width: 320px)" srcset="./images/profile.png" />
+            <source media="(min-width: 640 px)" srcset="./images/profile.png" />
+            <img
+              src="./images/profile.png"
+              alt="cat-profile-pic"
+              style="width: auto;"
+            />
+            <h1>Daniel McFish</h1>
+          </div>
+        </picture>
+      </header>
+      <main class="main">
+        <div class="cat-1 cat-images">
+          <img src="./images/cat-1.jpg" alt="cat-1" />
+        </div>
+        <div class="cat-2 cat-images">
+          <img src="./images/cat-2.jpg" alt="cat-2" />
+        </div>
+        <div class="cat-3 cat-images">
+          <img src="./images/cat-3.jpg" alt="cat-3" />
+        </div>
+      </main>
+    </div>
   </body>
 </html>
